@@ -302,8 +302,8 @@ class RecurrentModel(Recurrent):
         self.decode = decode
         self.output_length = output_length
         if decode:
-            if output_length is None:
-                raise Exception('output_length should be specified for decoder')
+            #if output_length is None:
+            #   raise Exception('output_length should be specified for decoder')
             kwargs['return_sequences'] = True
         self.return_states = return_states
         if readout_input is not None:
